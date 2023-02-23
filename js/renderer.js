@@ -27,7 +27,7 @@ function setQuestion(dataShuffled) {
     const answerParent = document.querySelector('#answers')
     answerParent.innerHTML = ''
     const image = new Image()
-    image.src = `/${imgSrc}`
+    image.src = `/bollard-boy/${imgSrc}`
     imgParent.appendChild(image)
 
     const answers = correctAnswers.concat(possibleAnswers)
