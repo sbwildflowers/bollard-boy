@@ -1,0 +1,95 @@
+body {
+  background-color: #212121;
+  padding: 30px;
+  color: #eee;
+  margin: 0; }
+
+a,
+div,
+h1,
+h2,
+h3,
+h4,
+h5
+p {
+  font-family: system-ui; }
+
+nav {
+  margin-top: -30px;
+  margin-left: -30px;
+  margin-right: -30px;
+  padding: 10px; }
+  nav a {
+    color: white; }
+
+div.training-categories {
+  display: flex;
+  gap: 20px;
+  place-content: center; }
+  div.training-categories a {
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: #212121;
+    border-radius: 12px; }
+    div.training-categories a img {
+      border-top-right-radius: 12px;
+      border-top-left-radius: 12px;
+      object-fit: fill;
+      height: 150px; }
+    div.training-categories a span {
+      padding: 8px; }
+
+article {
+  text-align: center; }
+
+#image img {
+  border-radius: 12px;
+  max-height: 500px; }
+
+button {
+  border: 0;
+  padding: 8px 12px;
+  cursor: pointer; }
+
+#prompt-wrapper,
+#score {
+  display: none; }
+
+.begin {
+  border-radius: 5px;
+  background: #8bc34a; }
+
+#answers {
+  display: inline-flex;
+  gap: 10px;
+  margin: 15px 0; }
+  #answers button.guess {
+    background-color: #ffc107; }
+  #answers button.right {
+    background-color: #8bc34a; }
+  #answers button.wrong {
+    background-color: red; }
+
+#action-wrapper {
+  display: flex;
+  gap: 15px;
+  place-content: center;
+  margin: 20px 0 20px; }
+  #action-wrapper button {
+    border-radius: 12px;
+    background: #03a9f4; }
+    #action-wrapper button:disabled {
+      background: #eee; }
+
+.result-string {
+  height: 18px; }
+
+.try-again {
+  display: none;
+  background: #8bc34a;
+  margin: 20px auto;
+  border-radius: 12px; }
